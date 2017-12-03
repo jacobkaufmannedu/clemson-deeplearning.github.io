@@ -28,3 +28,12 @@
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
 }
+
+h3.page-header {
+  padding-bottom: 9px;
+  margin-top: 0;
+}
+
+#deepdream .image-container {
+  padding: 5px;
+}

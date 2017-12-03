@@ -54,13 +54,40 @@
       </div>
     </nav>
 
+
+
     <!-- Page Content -->
     <div class="container">
+      <!-- Showcase description -->
+      <div class="container-fluid">
+        <div class="page-header">
+          <h1>Deep Learning Showcase</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            Here you can find a few examples of what we were able to do with a server setup for deep learning. <br>
+            Contents:
+            <ul>
+              <li><a href="#colorization">Coloring b&amp;w images</a></li>
+              <li><a href="#deepdream">Bizarre image with Google's DeepDream</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
 
       <!-- COLORIZATION SHOWCASE -->
+
       <div class="container-fluid" id='colorization'>
         <div class="page-header">
-          <h1>Pick the Original Picture</h1>
+          <h2>Pick the Original Picture</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>With a deep learning server we were able to train a network to take a black and white image (on the left) and add color back to it. This was a achieved by training a Convolutional Neural Network on black and white images and the colored version of each image. Over time it was able to learn what a black and white image should look like like in color, allowing us to feed in an image of our own and have it predict what the original looks like. <br><br>
+            Heres the link to the original github project: <br>
+            <a href="https://github.com/richzhang/colorization" target="_blank">https://github.com/richzhang/colorization</a></p>
+          </div>
         </div>
 
         <!-- black and white -->
@@ -109,33 +136,43 @@
 
 
 
-
-
       <!-- DEEP DREAM SHOWCASE -->
+
       <div class="container-fluid" id='deepdream'>
         <div class="page-header">
-          <h1>Google DeepDream</h1>
+          <h2>Google DeepDream</h2>
         </div>
         <div class="row">
-          <p>Generate psychedelic images algorithmically! This showcase warps Death Valley into a trippy stadium using the Google DeepDream algorithm and the Tensorflow framework.</p>
+          <div class="col-md-12 ">
+            <p>Generate psychedelic images algorithmically! This showcase warps Death Valley into a trippy stadium using the Google DeepDream algorithm and the Tensorflow framework.<br><br>
+            Heres the link to the original github project: <br>
+            <a href="#" target="_blank">INSERT LINK HERE</a></p>
+          </div>
         </div>
 
+        <!-- original image -->
         <div class="row">
           <div class="col-md-7">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/DeepDream_DeathValley.png" >
+            <div class="image-container">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/DeepDream_DeathValley.png" >
+            </div>
           </div>
           <div class="col-md-5">
             <h3 class='page-header'>Death Valley</h3>
-            <p>This is the image after running it through the deep dream algorithm multiple times, focusing on the features that express flowers.</p>
+            <p>This is original image of Death Valley, the pride and joy of Clemson!</p>
           </div>
         </div>
+
+        <!-- death valley but with flowers -->
         <div class="row">
           <div class="col-md-7">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/DeepDream_DeathValley.png" >
+            <div class="image-container">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/DeepDream_DeathValley.png" >
+            </div>
           </div>
           <div class="col-md-5">
             <h3 class='page-header'>Death Valley Flowerfied</h3>
-            <p>This is the image after running it through the deep dream algorithm multiple times, focusing on the features that express flowers.</p>
+            <p>This is the image after running it through the deep dream algorithm multiple times, extracting the features that express flowers.</p>
           </div>
         </div>
       </div>
