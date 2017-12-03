@@ -12,6 +12,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/showcase.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
@@ -35,7 +37,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="showcase.html">Showcase
-                <span class="sr-only">(current)</span>                
+                <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
@@ -55,6 +57,100 @@
     <!-- Page Content -->
     <div class="container">
 
-      <!-- Page Heading -->
-      <h1 class="my-4">Deep Learning Powered by NVIDIA <br />
-      </h1>
+      <!-- COLORIZATION SHOWCASE -->
+      <div class="container-fluid" id='colorization'>
+        <div class="page-header">
+          <h1>Pick the Original Picture</h1>
+        </div>
+
+        <!-- black and white -->
+        <div class="row picture-picker-row" id="picture-picker-1">
+          <div class="col-md-4 black-and-white">
+            <div class="image-container">
+              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            </div>
+          </div>
+
+          <!-- generated -->
+          <div class="col-md-4">
+            <div class="image-container original" value='1'>
+              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            </div>
+          </div>
+
+          <!-- correct -->
+          <div class="col-md-4">
+            <div class="image-container generated" value='1'>
+              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row picture-picker-row" id="picture-picker-2">
+          <div class="col-md-4 black-and-white">
+            <div class="image-container">
+              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="image-container original" value='2'>
+              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="image-container generated" value='2'>
+              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- DEEP DREAM SHOWCASE -->
+      <div class="container-fluid" id='deepdream'>
+        <div class="page-header">
+          <h1>Google DeepDream</h1>
+        </div>
+        <div class="row">
+          <p>Generate psychedelic images algorithmically! This showcase warps Death Valley into a trippy stadium using the Google DeepDream algorithm and the Tensorflow framework.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/DeepDream_DeathValley.png" >
+          </div>
+          <div class="col-md-5">
+            <h3 class='page-header'>Death Valley</h3>
+            <p>This is the image after running it through the deep dream algorithm multiple times, focusing on the features that express flowers.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/DeepDream_DeathValley.png" >
+          </div>
+          <div class="col-md-5">
+            <h3 class='page-header'>Death Valley Flowerfied</h3>
+            <p>This is the image after running it through the deep dream algorithm multiple times, focusing on the features that express flowers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Clemson Deep Learning 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/showcase.js"></script>
+  </body>
