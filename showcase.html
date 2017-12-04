@@ -77,13 +77,14 @@
 
       <div class="container-fluid" id='colorization'>
         <div class="page-header">
-          <h2>Pick the Original Picture</h2>
+          <h2>Image Coloring</h2>
         </div>
         <div class="row">
           <div class="col-md-12">
             <p>With a deep learning server we were able to train a network to take a black and white image (on the left) and add color back to it. This was a achieved by training a Convolutional Neural Network on black and white images and the colored version of each image. Over time it was able to learn what a black and white image should look like like in color, allowing us to feed in an image of our own and have it predict what the original looks like. <br><br>
             Heres the link to the original github project: <br>
             <a href="https://github.com/richzhang/colorization" target="_blank">https://github.com/richzhang/colorization</a></p>
+            <p><strong>Instructions: </strong>Can you figure out which image is the original? On the left is the black and white version of the image. One of the images on the right is the original and one of them has been colored via the convolutional neural network. <br><strong>Click on the one that you think is <em>the original</em> and figure out if you were correct!</p></strong>
           </div>
         </div>
 
@@ -91,21 +92,21 @@
         <div class="row picture-picker-row" id="picture-picker-1">
           <div class="col-md-4 black-and-white">
             <div class="image-container">
-              <img width="100%" src="images/piano.jpg" alt="Piano" />
+              <img width="100%" src="images/colorization/dalmation-bw.png" alt="Piano" />
             </div>
           </div>
 
           <!-- generated -->
           <div class="col-md-4">
-            <div class="image-container original" value='1'>
-              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            <div class="image-container generated" value='1'>
+              <img width="100%" src="images/colorization/dalmation-colorized.png" alt="Piano" />
             </div>
           </div>
 
           <!-- correct -->
           <div class="col-md-4">
-            <div class="image-container generated" value='1'>
-              <img width="100%" src="images/piano.jpg" alt="Piano" />
+            <div class="image-container original" value='1'>
+              <img width="100%" src="images/colorization/dalmation-original.png" alt="Piano" />
             </div>
           </div>
         </div>
@@ -113,21 +114,47 @@
         <div class="row picture-picker-row" id="picture-picker-2">
           <div class="col-md-4 black-and-white">
             <div class="image-container">
-              <img width="100%" src="images/piano.jpg" alt="Piano" />
+              <img width="100%" src="images/colorization/flower-bw.png" alt="Piano" />
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="image-container original" value='2'>
-              <img width="100%" src="images/piano.jpg" alt="Piano" />
+              <img width="100%" src="images/colorization/flower-original.png" alt="Piano" />
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="image-container generated" value='2'>
-              <img width="100%" src="images/piano.jpg" alt="Piano" />
+              <img width="100%" src="images/colorization/flower-colorized.png" alt="Piano" />
             </div>
           </div>
+        </div>
+
+        <div class="row picture-picker-row" id="picture-picker-3">
+          <div class="col-md-4 black-and-white">
+            <div class="image-container">
+              <img width="100%" src="images/colorization/dogs-bw.png" alt="Piano" />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="image-container generated" value='3'>
+              <img width="100%" src="images/colorization/dogs-colorized.png" alt="Piano" />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="image-container original" value='3'>
+              <img width="100%" src="images/colorization/dogs-original.png" alt="Piano" />
+            </div>
+          </div>
+        </div>
+        <div class="row disclaimer">
+          <span><em>
+            Disclaimer: The server we borrowed was down when trying to put this page together so some of these images have been taken from a similar project found <a href='http://tinyclouds.org/colorize/' target='_blank'>here</a>.
+          </em>
+        </span>
         </div>
       </div>
 
@@ -144,8 +171,8 @@
             <p>Generate psychedelic images algorithmically! This showcase warps Death Valley into a trippy stadium using the Google DeepDream algorithm and the Tensorflow framework.<br><br>
 	      You may want to download the ipython notebook due to its size. It has visualizations for a few layers ran so that you don't need to!<br><br>
 
-            Heres the link to the original github project: <br>
-            <a href="#" target="https://github.com/acarrab/exploring-deep-learning/tree/master/feature_visualization">Feature Vizualization with Deep Dream</a></p>
+            Heres the link to the github project: <br>
+            <a href="https://github.com/acarrab/exploring-deep-learning/tree/master/feature_visualization" target="_blank">Feature Vizualization with Deep Dream</a>
           </div>
         </div>
 
